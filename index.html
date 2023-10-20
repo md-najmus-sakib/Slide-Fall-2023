@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Selection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="header-section">
+        <div class="text-div">
+            <h1>Select five players for your best
+                Team.</h1>
+            <p>Please select only five player. You can not select more than
+                five
+                player.</p>
+            <div class="hea-img-div">
+                <img class="header-img1" src="image/UEFA Champions League logo.png" alt="">
+                <img class="header-img1" src="image/animation-player.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+    <main>
+        <!-- card section start -->
+        <section class="card-section">
+            <div class="pt-20 pb-4 px-20">
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="bg-black pb-5">
+                        <img src="image/Lionel Messi.jpg" class="card-common-img" alt="...">
+                        <h4 class="text-2xl font-bold text-white text-center pt-5">Lionel Messi</h4>
+                        <div class="pt-8 flex justify-center">
+                            <button id="messi-btn"
+                                class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="bg-black pb-5">
+                        <img src="image/Neymar Jr.jpg" class="card-common-img" alt="...">
+                        <h4 class="text-2xl font-bold text-white text-center pt-5">Neymar Jr</h4>
+                        <div class="pt-8 flex justify-center">
+                            <button id="neymar-btn"
+                                class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="bg-black pb-5">
+                        <img src="image/Kylian Mbappé.jpeg" class="card-common-img" alt="...">
+                        <h4 class="text-2xl font-bold text-white text-center pt-5">Kylian Mbappé</h4>
+                        <div class="pt-8 flex justify-center">
+                            <button id="kylian-btn"
+                                class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="bg-black">
+                        <div class="pt-3">
+                            <h5 class="text-white text-center text-2xl pb-3">Selected - V</h5>
+                            <hr>
+                            <div class="px-8 pt-8">
+                                <ol class="text-white">
+                                    <li id="li-one"></li>
+                                    <li id="li-two"></li>
+                                    <li id="li-three"></li>
+                                    <li id="li-four"></li>
+                                    <li id="li-five"></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-20 px-20">
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="bg-black pb-5">
+                        <img src="image/Vítor Machado u.jpg" class="card-common-img" alt="...">
+                        <h4 class="text-2xl font-bold text-white text-center pt-5">Vítor Machado</h4>
+                        <div class="pt-8 flex justify-center">
+                            <button id="vitor-btn"
+                                class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="bg-black pb-5">
+                        <img src="image/Sergio Ramos.jpeg" class="card-common-img" alt="...">
+                        <h4 class="text-2xl font-bold text-white text-center pt-5">Sergio Ramos</h4>
+                        <div class="pt-8 flex justify-center">
+                            <button id="ramos-btn"
+                                class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="bg-black pb-5">
+                        <img src="image/Renato Sanches.jpg" class="card-common-img" alt="...">
+                        <h4 class="text-2xl font-bold text-white text-center pt-5">Renato Sanches</h4>
+                        <div class="pt-8 flex justify-center">
+                            <button id="renato-btn"
+                                class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">SELECT</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-black">
+                            <div class="px-5">
+                                <div>
+                                    <h5 class="text-white text-center text-2xl pt-5">Budget</h5>
+                                    <hr>
+                                    <div class="flex pt-5 pb-5">
+                                        <h4 class="text-white">Per Player: </h4>
+                                        <input id="player-field" class="text-white bg-black border-2 border-white-400"
+                                            type="text">
+                                    </div>
+                                    <div class="flex justify-center pb-5">
+                                        <button id="player-price-btn"
+                                            class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">Calculate</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-white">Player Expenses: $<span id="player-price-text">0</span></h3>
+                                    <div class="flex pt-5 pb-5">
+                                        <h4 class="text-white">Manager: </h4>
+                                        <input id="manager-value" class="text-white bg-black border-2 border-white-400"
+                                            type="text">
+                                    </div>
+                                    <div class="flex pb-5">
+                                        <h4 class="text-white">Coach: </h4>
+                                        <input id="coach-value" class="text-white bg-black border-2 border-white-400"
+                                            type="text">
+                                    </div>
+                                    <div class="flex justify-center pb-4">
+                                        <button id="total-price-btn"
+                                            class="bg-blue-700 hover:bg-blue-600 text-white px-14 py-2">Calculate
+                                            Total</button>
+                                    </div>
+                                    <h3 class="text-white pb-5">Total: $<span id="total-price-field">0</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card section end -->
+    </main>
+    <script src="js-file/main.js"></script>
+</body>
+
+</html>
